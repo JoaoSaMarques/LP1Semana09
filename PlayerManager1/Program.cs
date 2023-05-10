@@ -88,5 +88,24 @@ namespace PlayerManager1
             Console.WriteLine("4. Quit");
             Console.Write("Enter your option: ");
         }
+
+        /// <summary>
+        /// Inserts a new player in the player list.
+        /// </summary>
+        private void InsertPlayer()
+        {
+            //Requires player input to write their name
+            Console.Write("Enter player name: ");
+            string name = Console.ReadLine();
+            //Requires player input to write score and convert to int.
+            Console.Write("Enter player score: ");
+            int score = int.Parse(Console.ReadLine());
+
+            //Based on info create new player
+            Player newPlayer = new Player(name, score);
+            playerList.Add(newPlayer);
+
+            Console.WriteLine("Player inserted successfully!");
+        }
     }
 }
