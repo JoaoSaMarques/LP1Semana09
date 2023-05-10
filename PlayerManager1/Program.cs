@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Collections.Generic; //Using what template suggested
 
 namespace PlayerManager1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Player List
+        /// </summary>
+        private List<Player> playerList;
+
+        /// <summary>
+        /// Main
+        /// </summary>
+        private static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            //Program
+            Program prog = new Program();
+            prog.Start();
         }
     }
 }
