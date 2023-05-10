@@ -4,7 +4,7 @@ namespace AnimalPerspective
 {
     public class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
             //Create new animal list
             Animal[] animals = new Animal[10];
