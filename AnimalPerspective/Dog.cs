@@ -11,9 +11,9 @@ namespace AnimalPerspective
         /// </summary>
         public Dog()
         {
-            NumberOfNipples = 10
+            NumberOfNipples = 10;
         }
-        
+
         public override string Sound()
         {
             return base.Sound() + "Woof!";

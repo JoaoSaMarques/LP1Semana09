@@ -11,7 +11,7 @@ namespace AnimalPerspective
         /// </summary>
         public Cat()
         {
-            NumberOfNipples = 10
+            NumberOfNipples = 8;
         }
 
         public override string Sound()

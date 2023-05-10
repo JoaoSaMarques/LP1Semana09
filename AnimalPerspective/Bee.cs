@@ -4,7 +4,7 @@ namespace AnimalPerspective
 {
     public class Bee : Animal, ICanFly
     {
-        //Number of wings
+        // Number of wings
         public int NumberOfWings { get; }
 
         /// <summary>
@@ -12,8 +12,8 @@ namespace AnimalPerspective
         /// </summary>
         public Bee()
         {
-            //Number of wings
-            NumberOfWings = 4; 
+            // Number of wings
+            NumberOfWings = 4;
         }
 
         /// <summary>
