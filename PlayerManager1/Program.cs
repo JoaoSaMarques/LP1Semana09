@@ -107,5 +107,32 @@ namespace PlayerManager1
 
             Console.WriteLine("Player inserted successfully!");
         }
+
+        /// <summary>
+        /// Show all players in a list of players. This method can be static
+        /// because it doesn't depend on anything associated with an instance
+        /// of the program. Namely, the list of players is given as a parameter
+        /// to this method.
+        /// </summary>
+        private static void ListPlayers(IEnumerable<Player> playersToList)
+        {
+            Console.WriteLine("Player List:");
+            foreach (Player player in playersToList)
+            {
+                Console.WriteLine($"Name: {player.Name}, Score: {player.Score}");
+            }
+        }
+
+        /// <summary>
+        /// Show all players with a score higher than a user-specified value.
+        /// </summary>
+        private void ListPlayersWithScoreGreaterThan()
+        {
+            Console.Write("Enter the minimum score: ");
+            int minScore = int.Parse(Console.ReadLine());
+
+            IEnumerable<Player> playersWithHigherScore = GetPlayersWithScoreGreaterThan(minScore);
+            ListPlayers(playersWithHigherScore);
+        }
     }
 }
