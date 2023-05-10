@@ -67,5 +67,26 @@ namespace PlayerManager1
                         Console.Error.WriteLine("\n>>> Unknown option! <<<\n");
                         break;
                 }
+
+                //Press key to continue
+                Console.Write("\nPress any key to continue...");
+                //Read input
+                Console.ReadKey(true);
+                //Spacing
+                Console.WriteLine("\n");
+
+            } while (option != "4");
+        }
+
+        //Menu
+        private void ShowMenu()
+        {
+            Console.WriteLine("Player Manager Menu");
+            Console.WriteLine("1. Insert player");
+            Console.WriteLine("2. List all players");
+            Console.WriteLine("3. List players with score greater than a value");
+            Console.WriteLine("4. Quit");
+            Console.Write("Enter your option: ");
+        }
     }
 }
