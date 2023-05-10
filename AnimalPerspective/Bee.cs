@@ -2,7 +2,7 @@
 
 namespace OverrideVsNew
 {
-    public class Dog : Animal
+    public class Bee : Animal, ICanFly
     {
         public override string Sound()
         {
