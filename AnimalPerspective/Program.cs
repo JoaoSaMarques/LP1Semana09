@@ -30,6 +30,27 @@ namespace OverrideVsNew
                 }
                 
             }
+
+            //For each animal
+            foreach (Animal animal in animals)
+            {
+                //Play a sound corresponding to animal
+                Console.WriteLine("Sound: " + animal.Sound());
+                //If the animal is a mammal, put number of nipples.
+                if (animal is IMammal mammal)
+                {
+                    Console.WriteLine("Number of nipples: " + mammal.NumberOfNipples);
+                }
+
+                //If the animal can fly then print their wings
+                if (animal is ICanFly flyable)
+                {
+                    Console.WriteLine("Number of wings: " + flyable.NumberOfWings);
+                }
+
+                //Print output
+                Console.WriteLine();
+            }
         }
     }
 }
