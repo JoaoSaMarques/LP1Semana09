@@ -8,6 +8,15 @@ namespace OverrideVsNew
         public int NumberOfWings { get; }
 
         /// <summary>
+        /// Bee constructor
+        /// </summary>
+        public Bee()
+        {
+            //Number of wings
+            NumberOfWings = 4; 
+        }
+
+        /// <summary>
         /// Sound it makes
         /// </summary>
         /// <returns></returns>
