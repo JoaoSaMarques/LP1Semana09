@@ -46,18 +46,23 @@ namespace PlayerManager1
 
                 switch (option)
                 {
+                    //First option
                     case "1":
                         InsertPlayer();
                         break;
+                    //Second option
                     case "2":
                         ListPlayers(playerList);
                         break;
+                    //Third option
                     case "3":
                         ListPlayersWithScoreGreaterThan();
                         break;
+                    //Forth option
                     case "4":
                         Console.WriteLine("Bye!");
                         break;
+                    //Basically if none of the 4
                     default:
                         Console.Error.WriteLine("\n>>> Unknown option! <<<\n");
                         break;
