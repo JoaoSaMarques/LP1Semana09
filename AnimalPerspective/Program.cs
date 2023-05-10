@@ -14,6 +14,20 @@ namespace OverrideVsNew
             {
                 int randomNumber = random.Next(1, 5);
                 switch (randomNumber)
+                {
+                    case 1:
+                        animals[i] = new Dog();
+                        break;
+                    case 2:
+                        animals[i] = new Cat();
+                        break;
+                    case 3:
+                        animals[i] = new Bat();
+                        break;
+                    case 4:
+                        animals[i] = new Bee();
+                        break;
+                }
                 
             }
         }
