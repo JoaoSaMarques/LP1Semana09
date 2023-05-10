@@ -10,11 +10,24 @@ namespace AnimalPerspective
         //How many wings does it have
         public int NumberOfWings { get; }
 
+        /// <summary>
+        /// Bat constructor
+        /// </summary>
+        public Bat()
+        {
+            //2 nipples
+            NumberOfNipples = 2; 
+            //2 wings
+            NumberOfWings = 2; 
+        }
 
-        //Play sound
+        /// <summary>
+        /// Play sound
+        /// </summary>
+        /// <returns></returns>
         public override string Sound()
         {
-            return base.Sound() + "Woof!";
+            return base.Sound() + "SCREE SCREE";
         }
     }
 }
