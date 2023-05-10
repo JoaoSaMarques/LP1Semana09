@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace OverrideVsNew
+namespace AnimalPerspective
 {
-    public class Dog : Animal
+    public class Bat : Animal, IMammal, ICanFly
     {
         public override string Sound()
         {
