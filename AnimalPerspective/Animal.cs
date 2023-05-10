@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OverrideVsNew
+namespace AnimalPerspective
 {
     public class Animal
     {
