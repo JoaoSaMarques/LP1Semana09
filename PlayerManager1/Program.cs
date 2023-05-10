@@ -31,5 +31,36 @@ namespace PlayerManager1
                 new Player("An even better player", 500)
             };
         }
+
+        /// <summary>
+        /// Program utilized for main (The actual game/console)
+        /// </summary>
+        private void Start()
+        {
+            string option;
+
+            do
+            {
+                ShowMenu();
+                option = Console.ReadLine();
+
+                switch (option)
+                {
+                    case "1":
+                        InsertPlayer();
+                        break;
+                    case "2":
+                        ListPlayers(playerList);
+                        break;
+                    case "3":
+                        ListPlayersWithScoreGreaterThan();
+                        break;
+                    case "4":
+                        Console.WriteLine("Bye!");
+                        break;
+                    default:
+                        Console.Error.WriteLine("\n>>> Unknown option! <<<\n");
+                        break;
+                }
     }
 }
