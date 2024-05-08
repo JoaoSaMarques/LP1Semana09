@@ -8,7 +8,7 @@ namespace FilePower1
     {
         static void Main(string[] args)
         {
-            if (args.Length > 2)
+            if (args.Length < 2)
             {
                 Console.WriteLine("provide at least one string as arguments.");
                 return;
