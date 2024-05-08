@@ -12,6 +12,8 @@ namespace IntCollections
             Stack<int> stack = new Stack<int>();
             Queue<int> queue = new Queue<int>();
             HashSet<int> hashSet = new HashSet<int>();
+
+            int[] values = { 1, 10, -30, 10, -5 };
         }
     }
 }
