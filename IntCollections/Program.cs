@@ -14,6 +14,14 @@ namespace IntCollections
             HashSet<int> hashSet = new HashSet<int>();
 
             int[] values = { 1, 10, -30, 10, -5 };
+
+            foreach (int value in values)
+            {
+                list.Add(value);
+                stack.Push(value);
+                queue.Enqueue(value);
+                hashSet.Add(value);
+            }
         }
     }
 }
