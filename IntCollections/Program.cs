@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace IntCollections
 {
@@ -6,7 +7,11 @@ namespace IntCollections
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Teste das coleções genéricas
+            List<int> list = new List<int>();
+            Stack<int> stack = new Stack<int>();
+            Queue<int> queue = new Queue<int>();
+            HashSet<int> hashSet = new HashSet<int>();
         }
     }
 }
