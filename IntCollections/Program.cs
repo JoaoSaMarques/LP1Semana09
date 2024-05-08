@@ -22,6 +22,27 @@ namespace IntCollections
                 queue.Enqueue(value);
                 hashSet.Add(value);
             }
+
+            // Impressão dos valores nas coleções
+            Console.WriteLine("List: " + string.Join(", ", list));
+            Console.Write("Stack: ");
+            foreach (int value in stack)
+            {
+                Console.Write(value + " ");
+            }
+            Console.WriteLine();
+            Console.Write("Queue: ");
+            foreach (int value in queue)
+            {
+                Console.Write(value + " ");
+            }
+            Console.WriteLine();
+            Console.Write("HashSet: ");
+            foreach (int value in hashSet)
+            {
+                Console.Write(value + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
