@@ -9,7 +9,13 @@ namespace CharSets
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            if (args.Length == 0)
+            {
+                Console.WriteLine("No files specified.");
+                return;
+            }
+
+            var charSets = new List<HashSet<char>>();
         }
     }
 }
