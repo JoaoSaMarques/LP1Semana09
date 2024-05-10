@@ -16,6 +16,29 @@ namespace CharSets
             }
 
             var charSets = new List<HashSet<char>>();
+
+            foreach (string file in args)
+            {
+                try
+                {
+                    var chars = new HashSet<char>();
+                    foreach (string line in File.ReadLines(file))
+                    {
+                        if (line.Length!= 1)
+                        {
+                            throw new Exception($"File {file} has a line with more than one character.");
+                        }
+                        chars.Add(line[0]);
+                    }
+                    charSets.Add(chars);
+                }
+                
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error: {ex.Message}");
+                    return;
+                }
+            }
         }
     }
 }
