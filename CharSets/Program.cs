@@ -40,14 +40,14 @@ namespace CharSets
                     Console.WriteLine($"Error: {ex.Message}");
                     return;
                 }
+            }
 
-                var intersection = charSets.Aggregate(new HashSet<char>(),
-                (a, b) => new HashSet<char>(a.Intersect(b)));
+            var intersection = charSets.Aggregate(new HashSet<char>(),
+            (a, b) => new HashSet<char>(a.Intersect(b)));
 
-                foreach (char c in intersection.OrderBy(x => x))
-                {
-                    Console.WriteLine(c);
-                }
+            foreach (char c in intersection.OrderBy(x => x))
+            {
+                Console.WriteLine(c);
             }
         }
     }
