@@ -24,6 +24,7 @@ namespace CharSets
                     var chars = new HashSet<char>();
                     foreach (string line in File.ReadLines(file))
                     {
+                        Console.WriteLine(line); // Print the line
                         if (line.Length!= 1)
                         {
                             throw new Exception($"File {file} has a line" +
@@ -40,7 +41,7 @@ namespace CharSets
                     return;
                 }
 
-                var intersection = charSets.Aggregate(new HashSet<char>(), 
+                var intersection = charSets.Aggregate(new HashSet<char>(),
                 (a, b) => new HashSet<char>(a.Intersect(b)));
 
                 foreach (char c in intersection.OrderBy(x => x))
