@@ -26,17 +26,26 @@ namespace CharSets
                     {
                         if (line.Length!= 1)
                         {
-                            throw new Exception($"File {file} has a line with more than one character.");
+                            throw new Exception($"File {file} has a line" +
+                            "with more than one character.");
                         }
                         chars.Add(line[0]);
                     }
                     charSets.Add(chars);
                 }
-                
+
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
                     return;
+                }
+
+                var intersection = charSets.Aggregate(new HashSet<char>(), 
+                (a, b) => new HashSet<char>(a.Intersect(b)));
+
+                foreach (char c in intersection.OrderBy(x => x))
+                {
+                    Console.WriteLine(c);
                 }
             }
         }
