@@ -1,11 +1,11 @@
 using System;
 
-namespace PlayerManager1
+namespace PlayerManager3
 {
     /// <summary>
     /// Represents a player with a name and score.
     /// </summary>
-    public class Player
+    public class Player : IComparable<Player>
     {
         /// <summary>
         /// Gets the player's name (read-only).
@@ -26,6 +26,21 @@ namespace PlayerManager1
         {
             Name = name;
             Score = score;
+        }
+
+        /// <summary>
+        /// Compares this player to another player by score descending.
+        /// </summary>
+        /// <param name="other">The other player to compare to.</param>
+        /// <returns>
+        /// A negative number if this player has a higher score than other,
+        /// zero if scores are equal, positive if this player has a lower score.
+        /// </returns>
+        public int CompareTo(Player other)
+        {
+            if (other == null) return -1;
+            // Descending order by score
+            return other.Score.CompareTo(this.Score);
         }
     }
 }
