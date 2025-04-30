@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManager2", "PlayerMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManager3", "PlayerManager3\PlayerManager3.csproj", "{A5343071-7739-4DBC-B3FE-FFF23E2A6E7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManager4", "PlayerManager4\PlayerManager4.csproj", "{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{A5343071-7739-4DBC-B3FE-FFF23E2A6E7A}.Release|x64.Build.0 = Release|Any CPU
 		{A5343071-7739-4DBC-B3FE-FFF23E2A6E7A}.Release|x86.ActiveCfg = Release|Any CPU
 		{A5343071-7739-4DBC-B3FE-FFF23E2A6E7A}.Release|x86.Build.0 = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|x64.Build.0 = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C5AA8F4-ED0F-4F04-AB01-32F2A032F002}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
