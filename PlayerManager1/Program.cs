@@ -143,10 +143,22 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            int minScore;
+            while (true)
+            {
+                Console.Write("Enter minimum score to filter players: ");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out minScore))
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid input. Please enter a valid int.");
+            }
+
+            var filteredPlayers = GetPlayersWithScoreGreaterThan(minScore);
+            ListPlayers(filteredPlayers);
         }
+
 
         /// <summary>
         /// Get players with a score higher than a given value.
