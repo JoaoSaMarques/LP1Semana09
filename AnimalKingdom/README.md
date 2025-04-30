@@ -2,7 +2,7 @@
 
 ## UML Diagram
 
-\```mermaid
+```mermaid
 classDiagram
     class Animal {
         <<abstract>>
