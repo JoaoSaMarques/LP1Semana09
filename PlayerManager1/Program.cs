@@ -99,10 +99,26 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void InsertPlayer()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
+            Console.Write("Enter player name: ");
+            string name = Console.ReadLine();
+
+            int score;
+            while (true)
+            {
+                Console.Write("Enter player score (integer): ");
+                string scoreInput = Console.ReadLine();
+                if (int.TryParse(scoreInput, out score))
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid score. Please enter a valid int.");
+            }
+
+            Player newPlayer = new Player(name, score);
+            playerList.Add(newPlayer);
+            Console.WriteLine($"Player '{name}' with score {score} added.");
         }
+
 
         /// <summary>
         /// Show all players in a list of players. This method can be static
