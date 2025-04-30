@@ -1,7 +1,8 @@
 ﻿﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
+namespace PlayerManager3
 {
     /// <summary>
     /// The player listing program.
@@ -59,7 +60,7 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
                         InsertPlayer();
                         break;
                     case "2":
-                        ListPlayers(playerList);
+                        ListPlayers(playerList.OrderByDescending(p => p.Score));
                         break;
                     case "3":
                         ListPlayersWithScoreGreaterThan();
@@ -119,7 +120,6 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
             Console.WriteLine($"Player '{name}' with score {score} added.");
         }
 
-
         /// <summary>
         /// Show all players in a list of players. This method can be static
         /// because it doesn't depend on anything associated with an instance
@@ -156,9 +156,8 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
             }
 
             var filteredPlayers = GetPlayersWithScoreGreaterThan(minScore);
-            ListPlayers(filteredPlayers);
+            ListPlayers(filteredPlayers.OrderByDescending(p => p.Score));
         }
-
 
         /// <summary>
         /// Get players with a score higher than a given value.
